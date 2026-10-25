@@ -32,7 +32,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card
-        uses: Theluga/github-readme-stats-action/github-readme-stats-action@v2
+        uses: Theluga/github-readme-stats-action@v2
         with:
           card: pin
           options: username=stats-organization&repo=github-readme-stats
