@@ -18,7 +18,7 @@ jobs:
           persist-credentials: true
 
       - name: Generate stats card
-        uses: Theluga/github-readme-stats-action@v2
+        uses: Theluga/github-readme-stats-action@main
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true
@@ -26,7 +26,7 @@ jobs:
           token: ${{ secrets.PROFILE_STATS_TOKEN }}
 
       - name: Generate top languages card
-        uses: Theluga/github-readme-stats-action@v2
+        uses: Theluga/github-readme-stats-action@main
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&langs_count=6
@@ -34,7 +34,7 @@ jobs:
           token: ${{ secrets.PROFILE_STATS_TOKEN }}
 
       - name: Generate pin card
-        uses: Theluga/github-readme-stats-action@v2
+        uses: Theluga/github-readme-stats-action@main
         with:
           card: pin
           options: username=stats-organization&repo=github-readme-stats
